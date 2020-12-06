@@ -1,0 +1,60 @@
+<!--
+ALUMNA:     ALEJANDRA VALLEJO FERNÁNDEZ
+MAESTRO:    OCTAVIO AGUIRRE LOZANO
+ASIGNATURA: COMPUTACIÓN EN EL SERVIDOR WEB
+ACTIVIDAD:  DESARROLLO DE UNA PÁGINA WEB USANDO PHP
+
+>> PRIMERA PARTE DEL EJERCICIO <<
+-->
+
+<!--formulario en html para solicitar datos al usuario-->
+<html>
+    <head>
+        <title>Ejercicios con PHP</title>
+    </head>
+    <body>
+        <!--se hace referencia al fichero index01.php para enviar los datos con el método POST-->
+        <form action="index01.php" method="post">
+            <h1>Felicidades!</h1>
+            <h2>Usted puede hacer v&aacutelida su promoci&oacuten 
+                en su pr&oacutexima compra de pizza
+                respondiendo la siguiente informaci&oacuten:</h2>
+
+            <!--solicita el nombre del cliente y el número de compra en cajas de texto-->
+            <p>Nombre completo: <input type="text" name="nombre" /></p>
+            <p>No. de compra (viene en su ticket): <input type="text" name="no_compra" /></p>
+            <!--lista desplegable para elegir el número de promoción-->
+            Elija el n&uacutemero de promoci&oacuten:<br>            
+            <select name="no_promocion">
+                <option>Seleccione</option>
+                <option name="promo1"> Promocion 1 </option>
+                <option name="promo2"> Promocion 2 </option>
+                <option name="promo3"> Promocion 3 </option>
+                <option name="promo4"> Promocion 4 </option>
+                <option name="promo5"> Promocion 5 </option>
+            </select><br>
+            <!--lista desplegable para elegir la pizza-->
+            Elija el sabor de la pizza: <br>            
+            <select name="sabor">
+                <option>Seleccione</option>
+                <option name="hawaiana"> Hawaiana </option>
+                <option name="chorizo"> Chorizo </option>
+                <option name="peperoni"> Peperoni </option>
+                <option name="champinon"> Champi&ntilde;&oacuten </option>
+                <option name="jalapeno"> Jalape&ntilde;o </option>
+                <option name="tres_quesos"> Tres quesos </option>
+            </select><br> 
+            <!--lista desplegable para elegir el tamaño de la pizza-->
+            Elija el tama&ntilde;o de la pizza: <br>            
+            <select name="tamano">
+                <option>Seleccione</option>
+                <option name="individual"> Individual </option>
+                <option name="grande"> Grande </option>
+                <option name="familiar"> Familiar </option>
+                <option name="jumbo"> Jumbo </option>                
+            </select><br>
+            <!--botón para enviar los datos-->
+            <p><input type="submit" value="Enviar" /></p>
+        </form>
+    </body>
+</html>
